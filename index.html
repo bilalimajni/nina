@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-   
-    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta charset="UTF-8" />
@@ -10,14 +8,53 @@
       name="description"
       content="Photographe professionnelle à Bordeaux spécialisée dans les mariages, événements d'entreprise et concerts."
     />
+
+    <!-- Balises Open Graph pour Facebook -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:language" content="fr" />
+    <meta
+      property="og:title"
+      content="Nina Carducci - Photographe Professionnelle"
+    />
+    <meta
+      property="og:description"
+      content="Photographe professionnelle à Bordeaux spécialisée dans les mariages, événements d'entreprise et concerts."
+    />
+    <meta
+      property="og:image"
+      content="https://bilalimajni.github.io/nina/assets/images/nina.webp"
+    />
+    <meta property="og:url" content="https://bilalimajni.github.io/nina/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nina Carducci - Photographe" />
+
+    <!-- Balises Twitter Card -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:language" content="fr" />
+    <meta
+      name="twitter:title"
+      content="Nina Carducci - Photographe Professionnelle"
+    />
+    <meta
+      name="twitter:description"
+      content="Photographe professionnelle à Bordeaux spécialisée dans les mariages, événements d'entreprise et concerts."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bilalimajni.github.io/nina/assets/images/nina.webp"
+    />
+
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-	  href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-	  rel="stylesheet"
-	/>
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400&family=Spectral:ital,wght@0,300;1,800&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Nina Carducci</title>
     <script type="application/ld+json">
       {
@@ -39,16 +76,20 @@
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
               "opens": "10:00",
               "closes": "19:00"
             }
           ]
         }
       }
-      
-   </script>
-   
+    </script>
   </head>
   <body>
     <header class="top-header">
@@ -70,7 +111,7 @@
         </ul>
       </div>
     </header>
-    <section
+    <div
       id="carouselExampleIndicators"
       class="carousel slide"
       data-bs-ride="carousel"
@@ -99,10 +140,14 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          
           <picture>
-            <source media="(max-width: 720px)" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash2.webp">
-        
+            <source
+              media="(max-width: 720px)"
+              srcset="
+                ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash2.webp
+              "
+            />
+
             <img
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
               class="d-block w-100"
@@ -110,10 +155,15 @@
             />
           </picture>
         </div>
-        
+
         <div class="carousel-item">
           <picture>
-            <source media="(max-width: 720px)" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash2.webp">
+            <source
+              media="(max-width: 720px)"
+              srcset="
+                ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash2.webp
+              "
+            />
             <img
               loading="lazy"
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
@@ -122,12 +172,16 @@
             />
           </picture>
         </div>
-        
+
         <div class="carousel-item">
           <picture>
-            <source media="(max-width: 720px)" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash(1).webp">
+            <source
+              media="(max-width: 720px)"
+              srcset="
+                ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash(1).webp
+              "
+            />
             <img
-            
               loading="lazy"
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
               class="d-block w-100"
@@ -135,7 +189,7 @@
             />
           </picture>
         </div>
-</div>
+      </div>
       <button
         class="carousel-control-prev"
         type="button"
@@ -154,14 +208,10 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </section>
+    </div>
     <section id="about">
       <div class="picture left">
-        <img
-          src="./assets/images/nina.webp"
-          alt="Photo de Nina"
-          type="image/webp"
-        />
+        <img src="./assets/images/nina.webp" alt="Photo de Nina" />
       </div>
       <div id="about-me">
         <h2 class="about-me__title">À propos de moi</h2>
@@ -183,93 +233,90 @@
       </div>
     </section>
     <section id="gallery">
-<h2 class="title">Portfolio</h2>
-<div class="container py-3">
-  <div class="gallery" style="display: none">
-    <img
-    loading="lazy"
-    data-gallery-tag="Concert"
-      class="gallery-item"
-      src="./assets/images//gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-      alt="Concert Photo  Aaron Paul"
-    />
-    <img
-    loading="lazy"
-      data-gallery-tag="Entreprises"
-      class="gallery-item"
-      src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-      alt="Entreprises Photo Ali Morshedlou"
-    />
-    <img
-    loading="lazy"
-      data-gallery-tag="Entreprises"
-      class="gallery-item"
-      src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-      alt="Entreprises Photo  Jason Goodman"
-    />
-    <img
-    loading="lazy"
-      data-gallery-tag="Mariages"
-      class="gallery-item"
-      src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-      alt="Mariages Photo  Hannah Busing"
-      type="image/webp"
-    />
-    <img
-    loading="lazy"
-      data-gallery-tag="Portrait"
-      class="gallery-item"
-      src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-      alt="Portrait Photo  Ade Tunji"
-    />
-    <img
-    loading="lazy"
-      data-gallery-tag="Mariages"
-      class="gallery-item img-fluid"
-      src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-      alt="Mariages Photo Jakob Owens"
-      type="image/webp"
-    />
+      <h2 class="title">Portfolio</h2>
+      <div class="container py-3">
+        <div class="gallery" style="display: none">
+          <img
+            loading="lazy"
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            src="./assets/images//gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
+            alt="Concert Photo  Aaron Paul"
+          />
+          <img
+            loading="lazy"
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
+            alt="Entreprises Photo Ali Morshedlou"
+          />
+          <img
+            loading="lazy"
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
+            alt="Entreprises Photo  Jason Goodman"
+          />
+          <img
+            loading="lazy"
+            data-gallery-tag="Mariages"
+            class="gallery-item"
+            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
+            alt="Mariages Photo  Hannah Busing"
+          />
+          <img
+            loading="lazy"
+            data-gallery-tag="Portrait"
+            class="gallery-item"
+            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
+            alt="Portrait Photo  Ade Tunji"
+          />
+          <img
+            loading="lazy"
+            data-gallery-tag="Mariages"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
+            alt="Mariages Photo Jakob Owens"
+          />
 
-    <img
-    loading="lazy"
-      data-gallery-tag="Portrait"
-      class="gallery-item img-fluid"
-      src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-      alt="Portrait Photo Nino van Prattenburg"
-      type="image/webp"
-    />
+          <img
+            loading="lazy"
+            data-gallery-tag="Portrait"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
+            alt="Portrait Photo Nino van Prattenburg"
+          />
 
-    <img
-    loading="lazy"
-      data-gallery-tag="Concert"
-      class="gallery-item"
-      src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-      alt="Concert Photo  Austin Neill"
-    />
-    <img
-    loading="lazy"
-      data-gallery-tag="Entreprises"
-      class="gallery-item"
-      src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-      alt="Entreprises Photo  Mateus Campos Felipe"
-    />
-  </div>
-</div>
-<div class="quote">
-  <figure>
-    <blockquote>
-      <h2 class="quote__text">
-        Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
-        qu’un fait est traduit en photo, il cesse d’être un fait pour
-        devenir une opinion. L’inexactitude n’existe pas en photographie.
-        Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-      </h2>
-    </blockquote>
-    <figcaption class="quote__author">- Richard Avedon</figcaption>
-  </figure>
-</div>
-</section>
+          <img
+            loading="lazy"
+            data-gallery-tag="Concert"
+            class="gallery-item"
+            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
+            alt="Concert Photo  Austin Neill"
+          />
+          <img
+            loading="lazy"
+            data-gallery-tag="Entreprises"
+            class="gallery-item"
+            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+            alt="Entreprises Photo  Mateus Campos Felipe"
+          />
+        </div>
+      </div>
+      <div class="quote">
+        <figure>
+          <blockquote>
+            <h2 class="quote__text">
+              Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+              qu’un fait est traduit en photo, il cesse d’être un fait pour
+              devenir une opinion. L’inexactitude n’existe pas en photographie.
+              Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+            </h2>
+          </blockquote>
+          <figcaption class="quote__author">- Richard Avedon</figcaption>
+        </figure>
+      </div>
+    </section>
     <section id="services">
       <h2 class="title">Mes services</h2>
       <div class="container">
@@ -334,7 +381,7 @@
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
-          <form action="" method="post">
+          <form action="#" method="post">
             <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" />
             <label for="email">Email</label>
@@ -350,13 +397,12 @@
           </form>
         </div>
         <div class="picture right">
-    <img
-    loading="lazy"
-      src="./assets/images/camera.webp"
-      alt="Appareil photo professionnel"
-      type="image/webp"
-    />
-  </div>
+          <img
+            loading="lazy"
+            src="./assets/images/camera.webp"
+            alt="Appareil photo professionnel"
+          />
+        </div>
       </div>
     </footer>
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
@@ -365,7 +411,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/maugallery.js" ></script>
-    <script src="./assets/scripts.js" ></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
   </body>
 </html>
